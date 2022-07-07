@@ -1,8 +1,8 @@
 let handler = async m => m.reply(`
-            .✵.Donasi Buat Bot.✵.
+            .✨.Donasi Buat Bot.🔖.
 
-            Dana : 089691183687
-            Pulsa : 089691183687
+            Dana : ?
+            Pulsa : ?
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']
 handler.tags = ['info']
