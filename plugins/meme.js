@@ -6,6 +6,6 @@ let handler = async (m, { conn }) => {
 handler.help = ['meme']
 handler.tags = ['fun']
 handler.command = /^(meme)$/i
-handler.limit = false
+handler.limit = true
 
 module.exports = handler
