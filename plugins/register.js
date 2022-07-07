@@ -8,7 +8,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 60) throw 'Umur terlalu tua 😂'
+  if (age > 60) throw 'Oi Tua :v'
   if (age < 6) throw 'Bayi bisa ngetik sesuai format bjir ._.'
   let __waktuh = (new Date - global.db.data.users[m.sender].reglast)
    let _waktuh = (+ 86400000 - __waktuh)
@@ -44,13 +44,13 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   m.reply(`
 Daftar berhasil!
 
-╭─「 Info 」
-│ Nama: ${name}
-│ Umur: ${age} tahun
-│ SN: ${sn}
+╭─「 Info Kamu 」
+│ ⭐ Nama: ${name}
+│ 🚀 Umur: ${age} tahun
+│ ✨ SN: ${sn}
 ╰────
 
-*Jika SN kamu lupa ketik ${usedPrefix}ceksn*
+*⚠️Jika SN kamu lupa ketik ${usedPrefix}ceksn*
 
 ${chatnye}
 `.trim())
