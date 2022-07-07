@@ -9,13 +9,13 @@ let handler = async(m, { conn, text }) => {
   var genAnim = []
   await fetch(`https://myanimelist.net/anime/${mal_id}`, { method: 'get' }).then(res => res.text()).then(res => { const $ = cheerio.load(res);$('div[class="spaceit_pad"]').each((a, b) => { $(b).each(function(c, d) { $(d).find("a").each(function(e, f) { if ($(f).attr("href").startsWith('/anime/genre/')) { genAnim.push($(f).text()) } }) }) }) })
 let animeingfo = `✨️ *Title:* ${title}
-🎆️ *Episodes:* ${episodes}
+🌉 *Episodes:* ${episodes}
 🎗️ *Genre:* ${genAnim.join(", ")}
 ➡️ *Start date:* ${start_date}
 🔚 *End date:* ${end_date}
 💬 *Show Type:* ${type}
 💌️ *Rating:* ${rated}
-❤️ *Score:* ${score}
+💘 *Score:* ${score}
 👥 *Members:* ${members}
 💚️ *Synopsis:* ${synopsis}
 🌐️ *URL*: ${url}`
@@ -23,7 +23,7 @@ let animeingfo = `✨️ *Title:* ${title}
 }
 handler.help = ['anime <judul>']
 handler.tags = ['internet']
-handler.command = /^(anime|animeinfo)$/i
+handler.command = /^(anime|animeinfo|infoanimek)$/i
 handler.limit = true
 
 module.exports = handler
