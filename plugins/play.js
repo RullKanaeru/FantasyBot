@@ -26,12 +26,16 @@ let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) =
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
 *❗ Title:* ${title}
+
 *📝 Filesize:* ${filesizeF}
+
 *✨Source:* ${vid.url}
+
 *🌙 ${isLimit ? 'Pakai ': ''}Link:* ${await shortlink(dl_link)}
+
 *⭐ Server y2mate:* ${usedServer}
 
-_*Please wait while processing..*_
+_*Proses, mungkin cuma 1 menit..*_
 `.trim(), m)
 let _thumb = {}
 try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
