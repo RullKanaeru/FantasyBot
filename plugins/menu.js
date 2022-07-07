@@ -37,16 +37,16 @@ let tags = {
 const defaultMenu = {
   before: `
 ╔════════════════╗
-╠➤👤𝙊𝙬𝙣𝙚𝙧 : ${global.ownername}
-╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : IrsanKontol
+╠➤👤𝙊𝙬𝙣𝙚𝙧 𝘽𝙤𝙩 : ${global.ownername}
+╠➤💻𝙉𝙖𝙢𝙖 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : ?
 ╠➤⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
 ╠➤🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
 ╚═══════╦════════╝
 ╔═══════╩════════╗
-║ 〘𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙼𝚄〙
-╠❥📈𝙻𝚒𝚖𝚒𝚝 : %limit
-╠❥🥀𝙻𝚎𝚟𝚎𝚕 : %level
-╠❥🤺𝙴𝚡𝚙   : %exp
+║ 〘 ᴘʀᴏғɪʟᴇ ᴋᴀᴍᴜ 〙
+╠❥📈 ʟɪᴍɪᴛ : %limit
+╠❥🥀 ʟᴇᴠᴇʟ : %level
+╠❥🤺 ᴇxᴘ   : %exp
 ╠════════════════╝
 %readmore`.trimStart(),
   header: '╠♨ %category ♨',
@@ -158,7 +158,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
-    conn.sendHydrated(m.chat, text.trim(), 'IrsanTitid🗿', null, 'https://youtube.com/channel/UCSkb2IZTJ7RuPvrcZKFFjtg', 'YOUTUBE GWEJ', '', '', [
+    conn.sendHydrated(m.chat, text.trim(), '𝑴𝒐𝒐𝒏', null, 'https://youtube.com/channel/UC9SGqP59vtr7e5qUBtH2rcw', '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕', '', '', [
       ['𝗚𝗥𝗨𝗣 𝗕𝗢𝗧', '/donasi'],
       ['?𝗝𝗔𝗦𝗔 𝗥𝗨𝗡?', '/sewa'],
       ['!𝗢𝗪𝗡𝗘𝗥!', '/owner']
@@ -172,20 +172,20 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: text.trim(),
-                            hydratedFooterText:'Ⓟ premium | Ⓛ limit',
+                            hydratedFooterText:'Ⓟ 𝑷𝑹𝑬𝑴𝑰𝑼𝑴 | Ⓛ 𝑳𝑰𝑴𝑰𝑻',
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Website',
-                                    url: 'https://youtube.com/channel/UCSkb2IZTJ7RuPvrcZKFFjtg'
+                                    displayText: '𝘞𝘌𝘉𝘚𝘐𝘛𝘌',
+                                    url: 'https://youtube.com/channel/UC9SGqP59vtr7e5qUBtH2rcw'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi',
+                                    displayText: '𝘋𝘖𝘕𝘈𝘚𝘐',
                                     id: '/donasi'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Sewa',
+                                    displayText: '𝘚𝘌𝘞𝘈',
                                     id: '/sewa'
                                 }  
                             }, {
