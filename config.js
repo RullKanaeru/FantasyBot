@@ -2,8 +2,8 @@ let fs = require('fs')                    //CREATOR = YahyaGanzz , DEVBOT
 let chalk = require('chalk')
 global.owner = [
   ['+6285746030186'],
-  ['+6285746030186'],
-  ['+6285746030186', '𝗢𝘄𝗻𝗲𝗿あ⁩', true]  
+  ['+0'],
+  ['+6285785845416', '𝗢𝘄𝗻𝗲𝗿あ⁩', true]  
   
 ] 
 global.ownername = [['Owner']]
