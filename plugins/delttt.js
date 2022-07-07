@@ -17,7 +17,7 @@ handler.tags = ['game']
 handler.command = /^(delttt|delsesittt|delsesitt)$/i
 handler.limit = true
 
-handler.register = false
+handler.register = true
 handler.fail = null
 
 module.exports = handler
