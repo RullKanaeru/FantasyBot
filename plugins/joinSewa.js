@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, usedPrefix, args, participants }) => {
   if (!args[1]) throw `berapa hari?`
   if (isNaN(args[1])) throw `Hanya angka, mewakili hari!`
   var anubot = owner[0]
-  m.reply(`Tunggu 3 detik bot akan join`)
+  m.reply(`Tunggu 3 detik bot akan join😴`)
   await delay(3000)
   try {
   var res = await conn.groupAcceptInvite(code)
@@ -33,7 +33,7 @@ Thanks dah invite *${m.name}*`, fkonn, {
      }).then(async () => {
      await delay(5000)
      }).then( async () => {
-     await conn.reply(res, `Tapi Boong 🤭`, 0)
+     await conn.reply(res, `Tapi Boong wkwkw`, 0)
      await conn.reply(owner[0]+'@s.whatsapp.net', `*INVITING!*\n\n@${m.sender.split('@')[0]} telah mengundang ${conn.user.name} ke grup\n\n${await conn.getName(res)}\n\n${res}\n\nPesan : ${args[0]}\n\nBot akan keluar otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`, null, {mentions: [m.sender]})
      })
      if (!e.length) await conn.reply(owner[0]+'@s.whatsapp.net', `*INVITING!*\n\n@${m.sender.split('@')[0]} telah mengundang ${conn.user.name} ke grup\n\n${await conn.getName(res)}\n\n${res}\n\nPesan : ${args[0]}\n\nBot akan keluar otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`, null, {mentions: [m.sender]})
