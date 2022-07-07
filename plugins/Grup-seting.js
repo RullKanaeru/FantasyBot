@@ -20,7 +20,7 @@ Grub masih terbuka, harus menulis format .group close
 }
 handler.help = ['group *open / close*']
 handler.tags = ['group']
-handler.command = /^(group)$/i
+handler.command = /^(group|grub)$/i
 
 handler.admin = true
 handler.botAdmin = true
