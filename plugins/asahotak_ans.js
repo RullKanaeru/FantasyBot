@@ -15,8 +15,8 @@ handler.before = async function (m) {
             m.reply(`*Benar!*\n+${this.asahotak[id][2]} XP\n+1 TiketCoin`)
             clearTimeout(this.asahotak[id][3])
             delete this.asahotak[id]
-        } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold) m.reply(`*Dikit Lagi!*`)
-        else m.reply(`*Salah!*`)
+        } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold) m.reply(`*Dikit Lagi, ayo semangat!*`)
+        else m.reply(`*❌Salah!*`)
     }
     return !0
 }
