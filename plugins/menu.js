@@ -60,7 +60,7 @@ Error
 └─────────────────┘
 %readmore`.trimStart(),
   header: '❬ ⸙: ✰❛ %category ❀❜ ❭\n',
-  body: '᯽ %cmd %islimit %isPremium',
+  body: '᯽ %cmd %islimit %isPremium \n',
   footer: '',
   after: `${global.namabot}
 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 𝙾𝚠𝚗𝚎𝚛 𝙱𝚘𝚝
@@ -170,7 +170,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     conn.sendHydrated(m.chat, text.trim(), '𝑴𝒐𝒐𝒏', null, 'https://youtube.com/channel/UC9SGqP59vtr7e5qUBtH2rcw', '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕', '', '', [
       ['丂ρꫀꫀᦔ 乃ꪮ𝓽', '/speed'],
       ['|ꪀꪜꫀꪀ𝓽ꪮ𝘳ꪗ', '/inv'],
-      ['ㄖ᭙ꫀ𝘳', '/owner']
+      ['ㄖ᭙ꪀꫀ𝘳', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
