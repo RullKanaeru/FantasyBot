@@ -49,6 +49,8 @@ Note: Kalau command gak muncul
 Munkin gak ada command nya atau lagi
 Error
 
+🌱 Cara Aktifin Antilink:
+.on antilink
 
 ┌─────────────────┐
 | 〘 ᴘʀᴏғɪʟᴇ ᴋᴀᴍᴜ 〙
@@ -60,7 +62,7 @@ Error
 └─────────────────┘
 %readmore`.trimStart(),
   header: '❬ ⸙: ✰❛ %category ❀❜ ❭\n',
-  body: '᯽ %cmd %islimit %isPremium \n',
+  body: '᯽ %cmd %islimit %isPremium\n',
   footer: '',
   after: `${global.namabot}
 𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 𝙾𝚠𝚗𝚎𝚛 𝙱𝚘𝚝
