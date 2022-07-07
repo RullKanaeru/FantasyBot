@@ -1,5 +1,5 @@
 let handler = async(m, {conn, command, usedPrefix, text}) => {
-  let fail = 'format salah, example: ' +usedPrefix+command+ ' Arietube|1. Masak'
+  let fail = 'format salah, example: ' +usedPrefix+command+ ' Rull|1. Cuci baju'
   global.db.data.users[m.sender].catatan = global.db.data.users[m.sender].catatan || []
   let catatan = global.db.data.users[m.sender].catatan
   let split = text.split('|')
@@ -12,7 +12,7 @@ let handler = async(m, {conn, command, usedPrefix, text}) => {
     'isi': isi
   }
   global.db.data.users[m.sender].catatan.push(cttn)
-  conn.reply(m.chat, `Catatan berhasil dibuat!\nUntuk melihat catatan. Ketik: ${usedPrefix}lihatcatatan`, m, false, {
+  conn.reply(m.chat, `📝 Catatan berhasil dibuat!\nUntuk melihat catatan. Ketik: ${usedPrefix}lihatcatatan`, m, false, {
     contextInfo: {
       mentionedJid: conn.parseMention(text)
     }
