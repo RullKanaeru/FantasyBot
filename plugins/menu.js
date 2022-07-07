@@ -49,12 +49,11 @@ const defaultMenu = {
 ╠❥🤺 ᴇxᴘ   : %exp
 ╠════════════════╝
 %readmore`.trimStart(),
-  header: '╠✨ %category ',
-  body: '╠ %cmd %islimit %isPremium',
-  footer: '╠════════════════╝\n╠════════════════╗',
+  header: '✨ %category \n ',
+  body: '᯽ %cmd %islimit %isPremium',
+  footer: '',
   after: `${global.namabot}
-*𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐢𝐧𝐢 𝐝𝐢𝐛𝐮𝐚𝐭 𝐨𝐥𝐞𝐡 ${global.ownername}
-${global.ownerinsta}
+𝙿𝚛𝚘𝚓𝚎𝚌𝚝 𝙱𝚢 𝙾𝚠𝚗𝚎𝚛 𝙱𝚘𝚝
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -159,9 +158,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
     conn.sendHydrated(m.chat, text.trim(), '𝑴𝒐𝒐𝒏', null, 'https://youtube.com/channel/UC9SGqP59vtr7e5qUBtH2rcw', '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕', '', '', [
-      ['𝗚𝗥𝗨𝗣 𝗕𝗢𝗧', '/donasi'],
-      ['?𝗝𝗔𝗦𝗔 𝗥𝗨𝗡?', '/sewa'],
-      ['!𝗢𝗪𝗡𝗘𝗥!', '/owner']
+      ['丂ρꫀꫀᦔ 乃ꪮ𝓽', '/speed'],
+      ['|ꪀꪜꫀꪀ𝓽ꪮ𝘳ꪗ', '/inv'],
+      ['ㄖ᭙ꫀ𝘳', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
