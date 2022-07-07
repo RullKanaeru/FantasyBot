@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, text }) => {
 	global.db.data.users[m.sender].exp -= 500
 	global.db.data.users[m.sender].money -= 500
 	global.db.data.users[m.sender].lastmining = new Date * 1
-  m.reply(`Selamat kamu mendapatkan : \n+${xpee} XP\n+${moneyy} Money\n+${limitt} Limit\n\nDipotong pajak :\n-500 XP\n-500 Money`)
+  m.reply(`⛏️ Selamat kamu mendapatkan : \n+${xpee} XP\n+${moneyy} Money\n+${limitt} Limit\n\nDipotong pajak :\n-500 XP\n-500 Money`)
   setTimeout(() => {
 					conn.reply(m.chat, `Hadiah sudah bisa di dapatkan kembali`, m)
 					}, timeout)
@@ -31,8 +31,6 @@ handler.command = /^(hadiah)/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = false
-handler.private = false
 
 handler.admin = false
 handler.botAdmin = false
