@@ -8,7 +8,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
      }
 handler.help = ['kisahnabi <name>']
 handler.tags = ['islami']
-handler.command = /^kisahnabi$/i
+handler.command = /^kisahnabi|kisah$/i
 handler.register = false
 handler.limit = true
 
