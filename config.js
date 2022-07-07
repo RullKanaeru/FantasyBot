@@ -1,13 +1,13 @@
 let fs = require('fs')                    //CREATOR = YahyaGanzz , DEVBOT
 let chalk = require('chalk')
 global.owner = [
-  ['+7 999 808-53-22'],
-  ['+7 999 808-53-22'],
-  ['+7 999 808-53-22', '𝗢𝘄𝗻𝗲𝗿あ⁩', true]  
+  ['+6285746030186'],
+  ['+6285746030186'],
+  ['+6285746030186', '𝗢𝘄𝗻𝗲𝗿あ⁩', true]  
   
 ] 
 global.ownername = [['Owner']]
-global.namabot = [['𝐌𝐞𝐦𝐨𝐁𝐨𝐭']]
+global.namabot = [['千ꪖꪀ𝓽ꪖ𝘴ꪗ 乃ꪮ𝓽']]
 global.ownerinsta = [['ɢᴀᴋ ᴀᴅᴀ']]
 global.mods = [] 
 global.prems = [] 
@@ -43,8 +43,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '𑁍 ʙʏ ᴍᴇᴍᴏ ʙᴏᴛ'
-  var sticker_author = 'ᴍᴇᴍᴏ ʙᴏᴛ'
+  var sticker_name = '𑁍 千ꪖꪀ𝓽ꪖ𝘴ꪗ 乃ꪮ𝓽'
+  var sticker_author = '千ꪖꪀ𝓽ꪖ𝘴ꪗ'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
