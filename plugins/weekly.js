@@ -1,7 +1,7 @@
 const free = 10000
 const prem = 20000
-const limitfree = 10
-const limitprem = 20
+const limitfree = 1
+const limitprem = 10
 const moneyfree = 10000
 const moneyprem = 20000
 
