@@ -22,8 +22,8 @@ conn.level = global.db.data.users[m.sender]
 
   await delay(1 * 1 * lamaPertarungan)
 
-  let alasanKalah = ['Naikin lagi levelnya😐','Cupu','Kurang hebat','Ampas Petnya','Pet gembel']
-  let alasanMenang = ['Hebat','Pro','Ganas Pet','Legenda Pet','Sangat Pro','Rajin Ngasi Makan Pet']
+  let alasanKalah = ['Naikin lagi levelnya🦋','Kurang Semangat','Kurang hebat']
+  let alasanMenang = ['Hebat','Pro','Anjayy','Gemgee','Sangat Pro','Rajin Ngasi Makan Pet']
 
   let kesempatan = []
   for (i=0;i<global.db.data.users[m.sender].kucing,kuda,naga,phonix,kyubi,centaur,griffin,serigala;i++) kesempatan.push(m.sender)
