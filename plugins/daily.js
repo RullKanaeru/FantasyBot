@@ -1,7 +1,7 @@
-const free = 5000
-const prem = 10000
-const moneyfree = 5000
-const moneyprem = 10000
+const free = 1000
+const prem = 5000
+const moneyfree = 1000
+const moneyprem = 5000
 const timeout = 86400000
 
 let handler = async (m, { conn, isPrems }) => {
