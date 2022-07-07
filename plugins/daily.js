@@ -19,7 +19,7 @@ let handler = async (m, { conn, isPrems }) => {
     } 
 handler.help = ['daily']
 handler.tags = ['rpgabsen']
-handler.command = /^(daily)$/i
+handler.command = /^(daily|claim)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
