@@ -8,9 +8,9 @@ handler.before = function (m, { user, text }) {
 
   if (chat.antivirtex && text > 2000) {
     this.reply(m.chat `
-*「 ANTI VIRTEX 」*
+*「 💀ANTI VIRTEX 」*
 
-Terdeteksi *${name}* telah mengirim virtex!
+❗ Terdeteksi *${name}* telah mengirim virtex!
 
 Maaf Kamu akan dikick dari grup ini!
 `.trim(), m)
