@@ -28,10 +28,10 @@ module.exports = {
                 if (typeof user !== 'object') global.db.data.users[m.sender] = {}
                 if (user) {
                     if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 1000
+                    if (!isNumber(user.limit)) user.limit = 20
                     if (!isNumber(user.joinlimit)) user.joinlimit = 1
-                    if (!isNumber(user.money)) user.money = 100000
-                    if (!isNumber(user.bank)) user.bank = 100000
+                    if (!isNumber(user.money)) user.money = 1000
+                    if (!isNumber(user.bank)) user.bank = 0
                     if (!isNumber(user.lastclaim)) user.lastclaim = 0
                     if (!('registered' in user)) user.registered = false
                     if (!user.registered) {
@@ -275,11 +275,11 @@ module.exports = {
                     if (!isNumber(user.lastadventure)) user.lastadventure = 0
                 } else global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 1000,
+                    limit: 20,
                     joinlimit: 1,
                     spammer: 0,
-                    money: 10000,
-                    bank: 10000,
+                    money: 1000,
+                    bank: 0,
                     health: 100,
                     tiketcoin: 0,
                     healtmonster: 100,
@@ -944,15 +944,15 @@ conn.ws.on('CB:call', async (json) => {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*owner*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*owner*_!',
-        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-        premium: '*Premium Dulu Tol Baru Bisa Gunain Prem? Ketik .owner 3k Permanen', 
-        banned: 'Perintah ini hanya untuk pengguna yang terbanned..',
-        group: 'Perintah ini hanya dapat digunakan di grup!',
-        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+        rowner: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴏᴡɴᴇʀ ʙᴏᴛ',
+        owner: 'ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴏᴡɴᴇʀ ʙᴏᴛ,
+        mods: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴏᴅᴇʀᴀᴛᴏʀ ʙᴏᴛ',
+        premium: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴘʀᴇᴍɪᴜᴍ ʙᴏᴛ', 
+        banned: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴏʀᴀɴɢ ʏᴀɴɢ ᴛᴇʀʙᴀɴɴᴇᴅ ʙᴏᴛ sᴀᴊᴀ',
+        group: 'ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅɪ ɢʀᴜʙ!',
+        private: 'ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ sɪ ɢᴜɴᴀᴋᴀɴ ᴅɪ ᴄʜᴀᴛ ᴘɪʙᴀᴅɪ',
+        admin: 'ʜᴀɴʏᴀ ᴅᴀᴀᴛ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴜʙ',
+        botAdmin: 'ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ ᴀᴅᴍɪɴ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
