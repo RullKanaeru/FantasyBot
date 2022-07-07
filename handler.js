@@ -28,7 +28,7 @@ module.exports = {
                 if (typeof user !== 'object') global.db.data.users[m.sender] = {}
                 if (user) {
                     if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 20
+                    if (!isNumber(user.limit)) user.limit = 10
                     if (!isNumber(user.joinlimit)) user.joinlimit = 1
                     if (!isNumber(user.money)) user.money = 1000
                     if (!isNumber(user.bank)) user.bank = 0
@@ -275,7 +275,7 @@ module.exports = {
                     if (!isNumber(user.lastadventure)) user.lastadventure = 0
                 } else global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 20,
+                    limit: 10,
                     joinlimit: 1,
                     spammer: 0,
                     money: 1000,
@@ -853,7 +853,7 @@ module.exports = {
                             pp = await this.profilePictureUrl(user)
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat Datang, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                             this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
@@ -944,15 +944,15 @@ conn.ws.on('CB:call', async (json) => {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴏᴡɴᴇʀ ʙᴏᴛ',
-        owner: 'ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ ᴜɴᴛᴜᴋ ᴏᴡɴᴇʀ ʙᴏᴛ,
-        mods: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴏᴅᴇʀᴀᴛᴏʀ ʙᴏᴛ',
-        premium: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴘʀᴇᴍɪᴜᴍ ʙᴏᴛ', 
-        banned: 'ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴏʀᴀɴɢ ʏᴀɴɢ ᴛᴇʀʙᴀɴɴᴇᴅ ʙᴏᴛ sᴀᴊᴀ',
-        group: 'ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅɪ ɢʀᴜʙ!',
-        private: 'ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ sɪ ɢᴜɴᴀᴋᴀɴ ᴅɪ ᴄʜᴀᴛ ᴘɪʙᴀᴅɪ',
-        admin: 'ʜᴀɴʏᴀ ᴅᴀᴀᴛ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴜʙ',
-        botAdmin: 'ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ ᴀᴅᴍɪɴ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ',
+        rowner: 'Perintah ini hanya dapat digunakan oleh _*owner*_',
+        owner: 'Perintah ini hanya dapat digunakan oleh _*owner*_!',
+        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
+        premium: '*Beli Premium Dlu Sana', 
+        banned: 'Perintah ini hanya untuk pengguna yang terbanned..',
+        group: 'Perintah ini hanya dapat digunakan di grup!',
+        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
+        admin: 'Perintah ini hanya untuk *Admin* grup!',
+        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
