@@ -49,8 +49,8 @@ const defaultMenu = {
 ╠❥🤺 ᴇxᴘ   : %exp
 ╠════════════════╝
 %readmore`.trimStart(),
-  header: '╠♨ %category ♨',
-  body: '╠✠ %cmd %islimit %isPremium',
+  header: '╠✨ %category ',
+  body: '╠ %cmd %islimit %isPremium',
   footer: '╠════════════════╝\n╠════════════════╗',
   after: `${global.namabot}
 *𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐢𝐧𝐢 𝐝𝐢𝐛𝐮𝐚𝐭 𝐨𝐥𝐞𝐡 ${global.ownername}
