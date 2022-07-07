@@ -37,28 +37,36 @@ let tags = {
 const defaultMenu = {
   before: `
 ┌─────────────────┐
-|
-|💻𝙉𝙖𝙢𝙖 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : ?
-|
-|⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
-|
-|🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
-| 
+ |
+ |💻𝙉𝙖𝙢𝙖 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : ?
+ |
+ |⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
+ |
+ |🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
+ | 
 └─────────────────┘
-Note: Kalau command gak muncul
+Note:
+
+Kalau command gak muncul
 Munkin gak ada command nya atau lagi
 Error
 
-🌱 Cara Aktifin Antilink:
+Cara Aktifin Antilink:
 .on antilink
 
+Jangan di spam yaa
+Minimal jeda
+
+Kalau make tagall gak ke tag semua
+Pakai hidetag aja
+
 ┌─────────────────┐
-| 〘 ᴘʀᴏғɪʟᴇ ᴋᴀᴍᴜ 〙
-|📈 ʟɪᴍɪᴛ : %limit
-|
-|🥀 ʟᴇᴠᴇʟ : %level
-|
-|🤺 ᴇxᴘ   : %exp
+ | 〘 ᴘʀᴏғɪʟᴇ ᴋᴀᴍᴜ 〙
+ |📈 ʟɪᴍɪᴛ : %limit
+ |
+ |🥀 ʟᴇᴠᴇʟ : %level
+ |
+ |🤺 ᴇxᴘ   : %exp
 └─────────────────┘
 %readmore`.trimStart(),
   header: '❬ ⸙: ✰❛ %category ❀❜ ❭\n',
