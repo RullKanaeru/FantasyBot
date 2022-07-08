@@ -15,11 +15,16 @@ let handler = async (m, { conn, usedPrefix }) => {
     let caption = `
 ${json.soal}
 
-Tipe : ${json.tipe}
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}suska untuk bantuan
-Bonus: ${poin} XP
-TiketCoin: ${tiketcoin} Tiketcoin
+🌱Tipe : ${json.tipe}
+Note: Kalau Tipe Salah berarti ad yang error
+
+⏰Timeout *${(timeout / 1000).toFixed(2)} detik*
+
+💬Ketik ${usedPrefix}suska untuk bantuan
+
+❗Bonus: ${poin} XP
+
+⛅TiketCoin: ${tiketcoin} Tiketcoin
 `.trim()
     conn.susunkata[id] = [
         await conn.reply(m.chat, caption, m),
