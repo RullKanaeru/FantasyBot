@@ -7,11 +7,11 @@ let handler = async (m, { conn, command, args }) => {
     global.db.data.users[m.sender].money -= moneyplus * count
     global.db.data.users[m.sender].bank += count
     conn.reply(m.chat, `-${moneyplus * count} Money\n+ ${count} ATM`, m)
-  } else conn.reply(m.chat, `Money tidak mencukupi untuk menabung ${count} ATM`, m)
+  } else conn.reply(m.chat, `❌ Money tidak mencukupi untuk menabung ${count} ATM`, m)
 }
 handler.help = ['atm <jumlah>', 'atmall']
 handler.tags = ['rpg']
-handler.command = /^atm([0-9]+)|atm|atmall$/i
+handler.command = /^atm([0-9]+)|atm|atmall|nabung$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
