@@ -6,8 +6,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (isClose === undefined)
         throw `
 *Format salah! Contoh :*
-  *○ ${usedPrefix + command} close*
-  *○ ${usedPrefix + command} open*
+
+  *➜ ${usedPrefix + command} close*
+  *➜ ${usedPrefix + command} open*
+
 ⭐ ${usedPrefix + command} close Tidak akan work jika
 grub dalam kondisi tertutup, harus menulis format .group open
 
