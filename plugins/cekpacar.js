@@ -32,7 +32,7 @@ let handler = async (m, { conn, text }) => {
   }
 
   if (typeof global.db.data.users[global.db.data.users[user].pasangan] == "undefined" && global.db.data.users[user].pasangan != ""){
-    return m.reply("*Pacar/gebetan target tidak terdaftar di ArieTube bot.*")
+    return m.reply("*Pacar/gebetan target tidak terdaftar di FantasyBot.*")
   }
 
   if (global.db.data.users[user].pasangan == "") {
@@ -42,14 +42,14 @@ let handler = async (m, { conn, text }) => {
       mentionedJid: [global.db.data.users[user].pasangan]
     }})
   }else {
-    conn.reply(m.chat, `*${orang} sedang menjalani hubungan dengan @${global.db.data.users[user].pasangan.split('@')[0]} 🥳🥳*`, m,{contextInfo: {
+    conn.reply(m.chat, `*⛅ ${orang} sedang menjalani hubungan dengan @${global.db.data.users[user].pasangan.split('@')[0]} 👍*`, m,{contextInfo: {
       mentionedJid: [global.db.data.users[user].pasangan]
     }})
   }
 }
 handler.help = ['cekpacar']
 handler.tags = ['jadian']
-handler.command = /^(cekpacar)$/i
+handler.command = /^(cekpacar|cekayang)$/i
 handler.limit = true
 handler.group = true
 handler.fail = null
