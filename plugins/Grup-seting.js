@@ -5,16 +5,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }[(args[0] || '')]
     if (isClose === undefined)
         throw `
-*Format salah! Contoh :*
+*Format anda salah! Contoh :*
 
-  *➜ ${usedPrefix + command} close*
-  *➜ ${usedPrefix + command} open*
+  *➜ #group close*
+  *➜ #group open*
 
-⭐ ${usedPrefix + command} close Tidak akan work jika
-grub dalam kondisi tertutup, harus menulis format .group open
+⭐ #group close Tidak akan work jika
+grub dalam kondisi tertutup, harus menulis format #group open
 
-⭐ ${usedPrefix + command} open Tidak akan work jika
-Grub masih terbuka, harus menulis format .group close
+⭐ #group open Tidak akan work jika
+Grub masih terbuka, harus menulis format #group close
 
 ║▌│█║▌│ █║▌│█│║▌║
 `.trim()
@@ -22,7 +22,7 @@ Grub masih terbuka, harus menulis format .group close
 }
 handler.help = ['group *open / close*']
 handler.tags = ['group']
-handler.command = /^(group|grub)$/i
+handler.command = /^(group|grub|open|close)$/i
 
 handler.admin = true
 handler.botAdmin = true
