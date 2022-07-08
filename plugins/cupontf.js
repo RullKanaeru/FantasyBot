@@ -24,14 +24,14 @@ let handler = async (m, { conn, args, usedPrefix, owner }) => {
                             }
                         }
                     }
-                } else conn.reply(m.chat, `cupon kamu tidak mencukupi untuk mentransfer sebesar ${count}`.trim(), m)
+                } else conn.reply(m.chat, `⚠️cupon kamu tidak mencukupi untuk mentransfer sebesar ${count}`.trim(), m)
                 break 
              
             default:
-                return conn.reply(m.chat, `Gunakan format ${usedPrefix}transfer <type> <jumlah> <@tag>\ncontoh penggunaan: *${usedPrefix}transfer cupon 1 @tag*\n\n*List yang bisa di transfer*\ncupon`.trim(), m)
+                return conn.reply(m.chat, `⚠️Gunakan format ${usedPrefix}transfer <type> <jumlah> <@tag>\ncontoh penggunaan: *${usedPrefix}transfer cupon 1 @tag*\n\n*List yang bisa di transfer*\ncupon`.trim(), m)
         }
     } catch (e) {
-        conn.reply(m.chat, `Format yang anda gunakan salah\n\nGunakan format ${usedPrefix}transfer <type> <jumlah> <@tag>\ncontoh penggunaan: *${usedPrefix}transfer cupon 1 @tag*`.trim(), m)
+        conn.reply(m.chat, `⚠️Format yang anda gunakan salah\n\nGunakan format ${usedPrefix}transfer <type> <jumlah> <@tag>\ncontoh penggunaan: *${usedPrefix}transfer cupon 1 @tag*`.trim(), m)
         console.log(e)
         if (owner) {
             for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)) {
