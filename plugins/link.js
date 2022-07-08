@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
         if (!'participants' in groupMetadata) throw 'participants is not defined'
         let me = groupMetadata.participants.find(user => user.id === conn.user.jid)
         if (!me) throw 'Bot tidak ada di grup itu'
-        if (me.admin !== 'admin') throw 'Aku bukan admin T_T'
+        if (me.admin !== 'admin') throw 'Bot Blom Admin 😴'
         m.reply('https://chat.whatsapp.com/' + await conn.groupInviteCode(id))
 /*
     if (!m.isGroup) {
