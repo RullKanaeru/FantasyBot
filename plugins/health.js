@@ -12,7 +12,9 @@ Ketik *${usedPrefix}buy potion ${count - user.potion}* Untuk membeli 🧃Potion
     user.potion -= count * 1
     user.health += heal * count
     m.reply(`
-Berhasil memakai *${count}* 🧃Potion(s)
+╔════════════════════════════════╗
+ |Berhasil memakai *${count}* 🧃Potion
+╚════════════════════════════════╝
 `.trim())
 }
 
