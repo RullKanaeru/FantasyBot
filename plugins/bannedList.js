@@ -4,15 +4,15 @@ let handler = async (m, { conn, usedPrefix }) => {
     let now = new Date() * 1
     
     m.reply(`
-┌ *Daftar Chat Terbanned*
-│ Total : ${chats.length} Chat${chats ? '\n' + chats.map(([jid], i) => `
+┌ *💬Daftar Chat Terbanned*
+│ ❗Total : ${chats.length} Chat${chats ? '\n' + chats.map(([jid], i) => `
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ ${jid}
 `.trim()).join('\n') : ''}
 └────
 
-┌ *Daftar User Terbanned*
-│ Total : ${users.length} User${users ? '\n' + users.map(([jid], i) => `
+┌ *💬Daftar User Terbanned*
+│ ❗Total : ${users.length} User${users ? '\n' + users.map(([jid], i) => `
 │ ${i + 1}. ${conn.getName(jid) == undefined ? 'Unknown' : conn.getName(jid)}
 │ wa.me/${jid.split('@')[0]}
 │ ${(global.db.data.users[jid].bannedDate - now) > 1 ? msToDate(global.db.data.users[jid].bannedDate - now) : '*Permanen!*'}
