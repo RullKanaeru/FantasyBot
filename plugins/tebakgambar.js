@@ -14,10 +14,10 @@ let handler = async (m, { conn, usedPrefix }) => {
   // if (!json.status) throw json
   let caption = `
   ${json.deskripsi}
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}hint untuk hint
-Bonus: ${poin} XP
-Tiketcoin: 1 Tiketcoin
+⏲️Timeout *${(timeout / 1000).toFixed(2)} detik*
+📝Ketik ${usedPrefix}hint untuk hint
+⭐Bonus: ${poin} XP
+🔖 Jawab dengan reply pesan ini
     `.trim()
   conn.tebakgambar[id] = [
     await conn.sendFile(m.chat, json.img, 'tebakgambar.jpg', caption, m, false, { thumbnail: Buffer.alloc(0) }),
