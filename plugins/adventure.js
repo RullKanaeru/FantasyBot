@@ -32,11 +32,11 @@ let handler = async (m, { conn, usedPrefix, owner }) => {
             let itemrand = [`*Selamat anda mendapatkan item rare yaitu*\n${mythic} Mythic Crate`,`*Selamat kamu mendapatkan item rare yaitu*\n${legendary} Legendary Crate`]
             let rendem = itemrand[Math.floor(Math.random() * itemrand.length)]
             let str = `
-Nyawa mu berkurang -${health * 1} karena Kamu telah berpetualang sampai ${pickRandom(['Jepang', 'Korea', 'Bali', 'Amerika', 'Iraq', 'Arab', 'Pakistan', 'German', 'Finlandia', 'Ke bawa dunia mimpi', 'Ujung dunia', 'Mars', 'Zimbabwe', 'Bulan', 'Pluto', 'Matahari', 'Hatinya dia', '...'])} dan mendapatkan
-*exp:* ${exp} 
-*uang:* ${uang}
-*tiketcoin:* 1
-*sampah:* ${sampah}${potion == 0 ? '' : '\n*Potion:* ' + potion + ''}${diamond == 0 ? '' : '\n*diamond:* ' + diamond + ''}${common == 0 ? '' : '\n*common crate:* ' + common + ''}${uncommon == 0 ? '' : '\n*uncommon crate:* ' + uncommon + ''}
+❤️ Nyawa mu berkurang -${health * 1} karena Kamu telah berpetualang sampai ${pickRandom(['Kota Aero', 'Hutan Belantara', 'Antah berantah', 'Kutub utara', 'Hutan floress', 'Desa Aero', 'Padang pasir', 'Kota tak berpenghuni', 'Mars', 'Ujung Dunia', 'Kota Moon', 'Ujung kehidupan', 'Sisi bumi', 'Hutan Gelap', 'Desa Krakatau', 'Desa goblin', 'Hatinya dia', '...'])} dan mendapatkan
+*✨exp:* ${exp} 
+*💵 uang:* ${uang}
+*🎫 tiketcoin:* 1
+*🗑️sampah:* ${sampah}${potion == 0 ? '' : '\n*Potion:* ' + potion + ''}${diamond == 0 ? '' : '\n*diamond:* ' + diamond + ''}${common == 0 ? '' : '\n*common crate:* ' + common + ''}${uncommon == 0 ? '' : '\n*uncommon crate:* ' + uncommon + ''}
 `.trim()
             
             setTimeout(() => {
@@ -68,7 +68,7 @@ Nyawa mu berkurang -${health * 1} karena Kamu telah berpetualang sampai ${pickRa
 
 handler.help = ['adventure']
 handler.tags = ['rpg']
-handler.command = /^(adventure|berpetualang)$/i
+handler.command = /^(adventure|berpetualang|menjelajah)$/i
 handler.limit = true
 handler.group = true
 handler.fail = null
