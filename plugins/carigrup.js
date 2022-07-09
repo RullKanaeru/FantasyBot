@@ -17,7 +17,7 @@ let result = {
 }
 hasal.push(result)
 })
-reo = '*Search Group*\n\n'
+reo = '*Mencari Grub*\n\n'
 for (let i of hasal ) {
 reo += `🔖Nama Grub: ${i.name_group}\n`
 reo += `🔗Link Grub: ${i.link}\n\n`
