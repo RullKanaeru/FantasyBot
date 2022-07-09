@@ -10,7 +10,7 @@
 }
 handler.help = ['block <@user>']
 handler.tags = ['owner']
-handler.command = /^block$/i
+handler.command = /^block|blok$/i
 handler.owner = true
 
 module.exports = handler*/
@@ -49,7 +49,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   
 	await conn.updateBlockStatus(user, "block")
  	
- 	conn.reply(m.chat, `Berhasil memblockir @${number}`, null, {contextInfo: {
+ 	conn.reply(m.chat, `🌅 Berhasil memblokir @${number}`, null, {contextInfo: {
     mentionedJid: [user]
  	}})
 
