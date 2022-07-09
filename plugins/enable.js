@@ -226,22 +226,22 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       if (!/[01]/.test(command)) return m.reply(`
 List option:
 ┌──────────┐
- |welcome
- |delete
- |public
- |antivirtex
- |antilink
- |autosticker
- |antibadword
- |autolevelup
- |detect
- |document
- |restrict
- |nyimak
- |autoread
- |pconly
- |gconly
- |swonly
+ | welcome
+ | delete
+ | public
+ | antivirtex
+ | antilink
+ | autosticker
+ | antibadword
+ | autolevelup
+ | detect
+ | document
+ | restrict
+ | nyimak
+ | autoread
+ | pconly
+ | gconly
+ | swonly
 └──────────┘
 Contoh penggunaan:
 ${usedPrefix}enable welcome
