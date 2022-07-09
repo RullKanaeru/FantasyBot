@@ -59,7 +59,7 @@ let handler = async (m, { conn, usedPrefix, owner }) => {
             global.db.data.users[m.sender].legendary += legendary * 1
             global.db.data.users[m.sender].lastadventure = new Date * 1
             } else conn.reply(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan coba *${timers}* lagi`, m)
-        } else conn.reply(m.chat, 'Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>*\ndan ketik *' + usedPrefix + 'use potion <jumlah>*', m)
+        } else conn.reply(m.chat, '👏Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>*\nDan ketik *' + usedPrefix + 'use potion <jumlah>*', m)
     } catch (e) {
         console.log(e)
         conn.reply(m.chat, 'Error', m)
