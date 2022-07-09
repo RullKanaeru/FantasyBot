@@ -231,15 +231,11 @@ List option:
  |public
  |antivirtex
  |antilink
- |antidelete
- |antitoxic
- |antisticker
  |autosticker
  |antibadword
  |autolevelup
  |detect
  |document
- |whitelistmycontacts
  |restrict
  |nyimak
  |autoread
