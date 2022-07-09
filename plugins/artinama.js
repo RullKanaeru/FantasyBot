@@ -67,9 +67,9 @@ request.get({
           var h  = x.replace(/<[^>]*>?/gm, '');
       console.log(""+ h);
       m.reply(`
-Arti dari nama ${nama} adalah
+🔖 Arti dari nama ${nama} adalah
 -----------------------------------
-Nama ${nama} ${h}
+⭐ Nama ${nama} ${h}
 -----------------------------------
 `)
   });
