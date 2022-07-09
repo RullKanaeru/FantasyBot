@@ -225,29 +225,35 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     default:
       if (!/[01]/.test(command)) return m.reply(`
 List option:
-❗welcome
-❗delete
-❗public
-❗antivirtex
-❗antilink
-❗antidelete
-❗antitoxic
-❗antisticker
-❗autosticker
-❗antibadword
-❗autolevelup
-❗detect
-❗document
-❗whitelistmycontacts
-❗restrict
-❗nyimak
-❗autoread
-❗pconly
-❗gconly
-❗swonly
-Contoh:
+┌──────────┐
+ |welcome
+ |delete
+ |public
+ |antivirtex
+ |antilink
+ |antidelete
+ |antitoxic
+ |antisticker
+ |autosticker
+ |antibadword
+ |autolevelup
+ |detect
+ |document
+ |whitelistmycontacts
+ |restrict
+ |nyimak
+ |autoread
+ |pconly
+ |gconly
+ |swonly
+└──────────┘
+Contoh penggunaan:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
+
+║▌│█║▌│ █║▌│█│║▌║
+F A N T A S Y
+B O T
 `.trim())
       throw false
   }
