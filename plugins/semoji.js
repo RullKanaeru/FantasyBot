@@ -5,10 +5,10 @@ const { EmojiAPI } = require("emoji-api")
 const emoji = new EmojiAPI()
 
 let handler = async (m, { conn, args, usedPrefix, command, isPrems }) => {
-  let er = `contoh:
-${usedPrefix}semoji whatsapp 😎
+  let er = `Contoh:
+${usedPrefix}semoji whatsapp 😄
 
-*Opsi*
+*Opsi Semoji*
 - apple
 - facebook
 - google
@@ -26,6 +26,7 @@ ${usedPrefix}semoji whatsapp 😎
 - softbank
 - docomo
 - au_by_kddi
+📝 Kalau error berarti emoji nya gak ada di opsi
 `.trim()
   if (!args[0]) throw er
 
