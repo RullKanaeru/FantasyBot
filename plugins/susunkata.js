@@ -7,7 +7,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.susunkata = conn.susunkata ? conn.susunkata : {}
     let id = m.chat
     if (id in conn.susunkata) {
-        conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.susunkata[id][0])
+        conn.reply(m.chat, '❌Masih ada soal belum terjawab di chat ini', conn.susunkata[id][0])
         throw false
     }
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/susunkata.json')).json()
@@ -15,18 +15,17 @@ let handler = async (m, { conn, usedPrefix }) => {
     let caption = `
 ${json.soal}
 
-🌱Tipe : ${json.tipe}
-Note: Kalau Tipe Salah berarti ad yang error
+Note: Reply Pesan Ini Untuk Jawab
 
-🔖 Jawab soal dengan reply pesan ini
+🌅Tipe : ${json.tipe}
 
-⏰Timeout *${(timeout / 1000).toFixed(2)} detik*
+⏲️Timeout *${(timeout / 1000).toFixed(2)} detik*
 
 💬Ketik ${usedPrefix}suska untuk bantuan
 
-❗Bonus: ${poin} XP
+🗡️Bonus: ${poin} XP
 
-⛅TiketCoin: ${tiketcoin} Tiketcoin
+🎫TiketCoin: ${tiketcoin} Tiketcoin
 `.trim()
     conn.susunkata[id] = [
         await conn.reply(m.chat, caption, m),
