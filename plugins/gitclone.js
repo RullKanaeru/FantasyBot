@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let handler = async (m, { args, usedPrefix, command }) => {
-    if (!args[0]) throw `Example user ${usedPrefix}${command} https://github.com/arivpns
+    if (!args[0]) throw `Example user ${usedPrefix}${command} https://github.com/rullkanaeru
     if (!regex.test(args[0])) throw 'link salah!'
     let [_, user, repo] = args[0].match(regex) || []
     repo = repo.replace(/.git$/, '')
