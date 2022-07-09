@@ -70,7 +70,6 @@ handler.help = ['adventure']
 handler.tags = ['rpg']
 handler.command = /^(adventure|berpetualang|menjelajah)$/i
 handler.limit = true
-handler.group = true
 handler.fail = null
 
 module.exports = handler
