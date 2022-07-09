@@ -18,6 +18,8 @@ ${json.soal}
 🌱Tipe : ${json.tipe}
 Note: Kalau Tipe Salah berarti ad yang error
 
+🔖 Jawab soal dengan reply pesan ini
+
 ⏰Timeout *${(timeout / 1000).toFixed(2)} detik*
 
 💬Ketik ${usedPrefix}suska untuk bantuan
