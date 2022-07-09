@@ -489,7 +489,7 @@ Sedang berperang di dungeon...
 
       setTimeout(async () => {
         let str2 =`
-❤️Nyawa ${P} masing masing berkurang *-${healt * 1}*, dan durability ⚔️Sword kalian masing masing berkurang *-${sword * 1}* karena kalian telah membunuh *${pickRandom(['Ender Dragon', 'Baby Dragon', 'Titan', 'Cacing dan Semut', 'PP Mikey', 'Orang', 'Kecoa', 'Semut', 'Siput', '....🗿', 'Wither', 'Sekeleton', 'Ayam Emas', 'Temenmu', 'Sapi', 'Tidak Ada', 'Creeper', 'Zombie', 'Hewan Pelihraanmu','Diri Sendiri'])}* dan mendapatkan total
+❤️Nyawa ${P} masing masing berkurang *-${healt * 1}*, dan durability ⚔️Sword kalian masing masing berkurang *-${sword * 1}* karena kalian telah membunuh *${pickRandom(['Ender Dragon', 'Baby Dragon', 'Titan', 'Cacing dan Semut', 'PP Mikey', 'Orang', 'Kecoa', 'Semut', 'Siput', 'Dpr', 'Wither', 'Sekeleton', 'Emot Watu', 'Temenmu', 'Sapi', 'Tidak Ada', 'Creeper', 'Zombie', 'Hewan Pelihraanmu','Master Goblin'])}* dan mendapatkan total
 *✉️exp:* ${exp * orang}
 *💵uang:* ${money * orang}
 *🗑️sampah:* ${sampah  * orang}${potion == 0 ? '' : '\n*🥤Potion:* ' + potion * orang}${makananPet == 0 ? '' : '\n*🍖Makanan Pet* ' + makananPet * orang}${kayu == 0 ? '' : '\n*🪵Kayu:* ' + kayu * orang}${batu == 0 ? '' : '\n*🪨Batu:* ' + batu * orang}${string == 0 ? '' : '\n*🕸️String:* ' + string * orang}${iron == 0 ? '' : '\n*⛓️Iron:* ' + iron * orang}${diamond == 0 ? '' : '\n*💎diamond:* ' + diamond * orang}${common == 0 ? '' : '\n*📦common crate:* ' + common * orang}${uncommon == 0 ? '' : '\n*📦uncommon crate:* ' + uncommon * orang}
