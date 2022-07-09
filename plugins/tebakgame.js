@@ -17,6 +17,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ⏰Timeout *${(timeout / 1000).toFixed(2)} detik*
 ❗Ketik ${usedPrefix}tega untuk clue
 ⛅Bonus: ${poin} XP
+🔖 Jawab soal dengan reply pesan ini
     `.trim()
   conn.tebakgame[id] = [
     await conn.sendFile(m.chat, json.img, 'tebakgame.jpg', caption, m, false, { thumbnail: Buffer.alloc(0) }),
