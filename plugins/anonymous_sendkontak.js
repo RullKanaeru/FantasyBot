@@ -5,7 +5,7 @@ async function handler(m, { command, conn, text }) {
 	this.anonymous = this.anonymous ? this.anonymous : {}
 	let who = m.sender
 	let room = Object.values(this.anonymous).find(room => room.check(who))
-	if (!room) throw 'kamu tidak berada di anonymous chat'
+	if (!room) throw '❌kamu tidak berada di anonymous chat'
 	let other = room.other(who)
   var name
   if (text) name = text
@@ -18,8 +18,8 @@ FN:${name.replace(/\n/g, '\\n')}
 TEL;type=CELL;type=VOICE;waid=${number}:${PhoneNumber('+' + number).getNumber('international')}
 END:VCARD`
 
-	this.reply(m.chat, `Kamu berhasil mengirim kontak kepada partner mu..`, m)
-	if (other) this.reply(other, `Partner mengirimkan kontak kepadamu`, m)
+	this.reply(m.chat, `✅Kamu berhasil mengirim kontak kepada partner mu..`, m)
+	if (other) this.reply(other, `❗Partner mengirimkan kontak kepadamu`, m)
 	if (other) this.sendMessage(other, {
             contacts: {
                 displayName: name,
