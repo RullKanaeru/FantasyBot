@@ -36,16 +36,16 @@ let tags = {
 }
 const defaultMenu = {
   before: `
+F A N T A S Y    B O T
 
 ⏰ 𝙐𝙋𝙏𝙄𝙈𝙀 : %uptime
 🗓️ 𝙏𝘼𝙉𝙂𝙂𝘼𝙇: %date
-📈 𝙇𝙄𝙈𝙄𝙏 : %limit
-🥀 𝙇𝙀𝙑𝙀𝙇 : %level
-🤺 𝙀𝙓𝙋   : %exp
+⭐ 𝙇𝙀𝙑𝙀𝙇 : %level
+✨ 𝙀𝙓𝙋   : %exp
 
 %readmore`.trimStart(),
-  header: '⃝▣──「 %category 」───⬣\n',
-  body: ' │ ○ %cmd %islimit %isPremium\n',
+  header: '⃝▣──「 %category 」───⬣',
+  body: ' │ ○ %cmd %islimit %isPremium',
   footer: '▣────────────⬣\n\n',
   after: `${global.namabot}
 `,
@@ -153,6 +153,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
     conn.sendHydrated(m.chat, text.trim(), '𝙍𝙋𝙂 𝘽𝙊𝙏', null, 'https://chat.whatsapp.com/DsmGGlFmlthBf9TOmxrDV2', '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕', '', '', [
       ['𝘒𝘦𝘤𝘦𝘱𝘢𝘵𝘢𝘯 𝘉𝘰𝘵', '/speed'],
+      ['𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺', '/inv'],
       ['𝘓𝘪𝘮𝘪𝘵', '/limit'],
       ['𝘊𝘳𝘦𝘢𝘵𝘰𝘳', '/owner']
     ], m)
