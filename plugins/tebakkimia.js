@@ -12,11 +12,12 @@ let handler = async (m, { conn, usedPrefix }) => {
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkimia.json')).json()
     let json = src[Math.floor(Math.random() * src.length)]
     let caption = `
-Nama unsur dari lambang ${json.lambang} adalah...
+⚛️ Nama unsur dari lambang ${json.lambang} adalah...
 
-Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}teki untuk bantuan
-Bonus: ${poin} XP
+⏲️Timeout *${(timeout / 1000).toFixed(2)} detik*
+📝Ketik ${usedPrefix}teki untuk bantuan
+🦋Bonus: ${poin} XP
+🔖 Jawab soal dengan reply pesan ini
 `.trim()
     conn.tebakkimia[id] = [
         await conn.reply(m.chat, caption, m),
