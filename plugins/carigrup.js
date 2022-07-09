@@ -19,8 +19,8 @@ hasal.push(result)
 })
 reo = '*Search Group*\n\n'
 for (let i of hasal ) {
-reo += `Name Group: ${i.name_group}\n`
-reo += `Link Group: ${i.link}\n\n`
+reo += `🔖Nama Grub: ${i.name_group}\n`
+reo += `🔗Link Grub: ${i.link}\n\n`
 }
 m.reply(reo)
 })
