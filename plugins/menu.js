@@ -36,12 +36,14 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-F A N T A S Y    B O T
+𝗙 𝗔 𝗡 𝗧 𝗔 𝗦 𝗬
+     𝗕 𝗢 𝗧
 
 ⏰ 𝙐𝙋𝙏𝙄𝙈𝙀 : %uptime
 🗓️ 𝙏𝘼𝙉𝙂𝙂𝘼𝙇: %date
 ⭐ 𝙇𝙀𝙑𝙀𝙇 : %level
 ✨ 𝙀𝙓𝙋   : %exp
+
 
 %readmore`.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
@@ -152,7 +154,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
     conn.sendHydrated(m.chat, text.trim(), '𝙍𝙋𝙂 𝘽𝙊𝙏', null, 'https://chat.whatsapp.com/DsmGGlFmlthBf9TOmxrDV2', '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕', '', '', [
-      ['𝘚𝘦𝘸𝘢 𝘉𝘰𝘳', '/sewabot'],
+      ['𝘚𝘦𝘸𝘢 𝘉𝘰𝘵', '/sewabot'],
       ['𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺', '/inv'],
       ['𝘓𝘪𝘮𝘪𝘵', '/limit'],
       ['𝘊𝘳𝘦𝘢𝘵𝘰𝘳', '/owner']
