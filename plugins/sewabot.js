@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-Sewa FantasyBot
+❗Sewa FantasyBot
 
 💬Price List
 1 Bulan: 25K
@@ -14,6 +14,6 @@ Pulsa (kalau owner nya mau)
 `.trim()) // FantasyBot
 handler.help = ['sewa']
 handler.tags = ['info']
-handler.command = /^sewa(bot)$/i
+handler.command = /^sewabot|sewa|nyewabot$/i
 
 module.exports = handler
