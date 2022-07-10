@@ -152,11 +152,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
     conn.sendHydrated(m.chat, text.trim(), '𝙍𝙋𝙂 𝘽𝙊𝙏', null, 'https://chat.whatsapp.com/DsmGGlFmlthBf9TOmxrDV2', '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕', '', '', [
-      ['𝘒𝘦𝘤𝘦𝘱𝘢𝘵𝘢𝘯 𝘉𝘰𝘵', '/speed'],
+      ['𝘚𝘦𝘸𝘢 𝘉𝘰𝘳', '/sewabot'],
       ['𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺', '/inv'],
       ['𝘓𝘪𝘮𝘪𝘵', '/limit'],
       ['𝘊𝘳𝘦𝘢𝘵𝘰𝘳', '/owner']
-      ['𝘚𝘦𝘸𝘢 𝘉𝘰𝘵', '/sewabot']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
