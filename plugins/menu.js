@@ -156,6 +156,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       ['𝘪𝘯𝘷𝘦𝘯𝘵𝘰𝘳𝘺', '/inv'],
       ['𝘓𝘪𝘮𝘪𝘵', '/limit'],
       ['𝘊𝘳𝘦𝘢𝘵𝘰𝘳', '/owner']
+      ['𝘚𝘦𝘸𝘢 𝘉𝘰𝘵', '/sewabot']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
