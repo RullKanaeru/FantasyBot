@@ -116,15 +116,15 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let prem = global.prems.includes(who.split`@`[0])
     let jodoh = `Berpacaran @${pasangan.split`@`[0]}`
     let str = `
-Name: ${username} ${registered ? '(' + name + ') ': ''}(@${who.split`@`[0]})${about ? '\nAbout: ' + about : ''}
-Status: ${pasangan ? jodoh : 'Jomblo' }
-Number: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-Link: https://wa.me/${who.split`@`[0]}${registered ? '\nAge: ' + age : ''}
-Registered: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}
-Premium: ${premium ? 'Yes' : 'No'}
-Kadaluarsa Premium: ${(premiumDate - now) > 1 ? msToDate(premiumDate - now) : '*Tidak diatur expired premium!*'}${lastclaim > 0 ? '\nLast Claim: ' + new Date(lastclaim) : ''}
+🦋Name: ${username} ${registered ? '(' + name + ') ': ''}(@${who.split`@`[0]})${about ? '\nAbout: ' + about : ''}
+📌Status: ${pasangan ? jodoh : 'Jomblo' }
+#️⃣Number: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+🔗Link: https://wa.me/${who.split`@`[0]}${registered ? '\nAge: ' + age : ''}
+💬Registered: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}
+🥇Premium: ${premium ? 'Yes' : 'No'}
+🏅Kadaluarsa Premium: ${(premiumDate - now) > 1 ? msToDate(premiumDate - now) : '*Tidak diatur expired premium!*'}${lastclaim > 0 ? '\nLast Claim: ' + new Date(lastclaim) : ''}
 
-*Inventory*
+*🎒Inventory*
 Level: ${level}
 Role: *${role}*
 Limit: *${limit}*
@@ -138,7 +138,7 @@ Expg: *${expg}*
 Tiketm: *${tiketm}*
 Tiketcoin: *${tiketcoin}*
 
-*Package*
+*🎫Package*
 Potion: *${potion}*
 Ramuan: *${ramuan}*
 Iron: *${iron}*
@@ -156,7 +156,7 @@ Makanan Kyubi: *${makanankyubi}*
 Makanan Centaur: *${makanancentaur}*
 Total inv: *${diamond + potion + ramuan + sampah + kayu + sword + iron + string + makananpet + makananphonix + makanannaga + makanangriffin + makanankyubi + makanancentaur}* item
 
-*Crate*
+*📦Crate*
 Boxs: *${boxs}*
 Common: *${common}*
 Uncommon: *${uncommon}*
@@ -165,34 +165,34 @@ Legendary: *${legendary}*.
 Pet: *${pet}*
 Gardenboxs: *${gardenboxs}*
 
-*Fruits*
+*🍇Fruits*
 Mangga: ${mangga}
 Anggur: ${anggur}
 Pisang: ${pisang}
 Jeruk: ${jeruk}
 Apel: ${apel}
 
-*Seeds*
+*🌱Seeds*
 Bibit Mangga: ${bibitmangga}
 Bibit Anggur: ${bibitanggur}
 Bibit Pisang: ${bibitpisang}
 Bibit Jeruk: ${bibitjeruk}
 Bibit Apel: ${bibitapel}
 
-*Trash Man*
+*🗑️Trash Man*
 Kardus: ${kardus}
 Kaleng: ${kaleng}
 Botol: ${botol}
 
-*Mining*
+*⛏️Mining*
 Berlian: ${berlian}
 Emas: ${emas}
 Diamond: ${diamond}
 
-*Hero*
+*🤠Hero*
 My Hero: *${hero == 0 ? 'Tidak Punya' : '' || hero == 1 ? 'Level 1' : '' || hero == 2 ? 'Level 2' : '' || hero == 3 ? 'Level 3' : '' || hero == 4 ? 'Level 4' : '' || hero == 5 ? 'Level 5' : '' || hero == 6 ? 'Level 6' : '' || hero == 7 ? 'Level 7' : '' || hero == 8 ? 'Level 8' : '' || hero == 9 ? 'Level 9' : '' || hero == 10 ? 'Level 10' : '' || hero == 11 ? 'Level 11' : '' || hero == 12 ? 'Level 12' : '' || hero == 13 ? 'Level 13' : '' || hero == 14 ? 'Level 14' : '' || hero == 15 ? 'Level 15' : '' || hero == 16 ? 'Level 16' : '' || hero == 17 ? 'Level 17' : '' || hero == 18 ? 'Level 18' : '' || hero == 19 ? 'Level 19' : '' || hero == 20 ? 'Level 20' : '' || hero == 21 ? 'Level 21' : '' || hero == 22 ? 'Level 22' : '' || hero == 23 ? 'Level 23' : '' || hero == 24 ? 'Level 24' : '' || hero == 25 ? 'Level 25' : '' || hero == 26 ? 'Level 26' : '' || hero == 27 ? 'Level 27' : '' || hero == 28 ? 'Level 28' : '' || hero == 29 ? 'Level 29' : '' || hero == 30 ? 'Level 30' : '' || hero == 31 ? 'Level 31' : '' || hero == 32 ? 'Level 32' : '' || hero == 33 ? 'Level 33' : '' || hero == 34 ? 'Level 34' : '' || hero == 35 ? 'Level 35' : '' || hero == 36 ? 'Level 36' : '' || hero == 37 ? 'Level 37'  : '' || hero == 38 ? 'Level 38' : '' || hero == 39 ? 'Level 39' : '' || hero == 40 ? 'Level MAX' : ''}*
 
-*Pet*
+*🐱Pet*
 Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level MAX' : ''}*
 Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}*
 Naga: *${naga == 0 ? 'Tidak Punya' : '' || naga == 1 ? 'Level 1' : '' || naga == 2 ? 'Level 2' : '' || naga == 3 ? 'Level 3' : '' || naga == 4 ? 'Level 4' : '' || naga == 5 ? 'Level 5' : '' || naga == 6 ? 'Level 6' : '' || naga == 7 ? 'Level 7' : '' || naga == 8 ? 'Level 8' : '' || naga == 9 ? 'Level 9' : '' || naga == 10 ? 'Level 10' : '' || naga == 11 ? 'Level 11' : '' || naga == 12 ? 'Level 12' : '' || naga == 13 ? 'Level 13' : '' || naga == 14 ? 'Level 14' : '' || naga == 15 ? 'Level 15' : '' || naga == 16 ? 'Level 16' : '' || naga == 17 ? 'Level 17' : '' || naga == 18 ? 'Level 18' : '' || naga == 19 ? 'Level 19' : '' || naga == 20 ? 'Level MAX' : ''}*
