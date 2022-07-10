@@ -10,25 +10,12 @@ let handler = async (m, { conn }) => {
   let d = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
-  description: ` *• SEWA BOT & UP TO PREMIUM •*
+  description: ` *• SEWA BOT •*
         
-1. Grup / 30 Hari
-Rp. 30.000
-Rp. 35.000 Pulsa
-
-2. Premium / 30 Hari
-Rp. 40.000 Dana
-Rp. 45.000 Pulsa
-
-3. Premium + Grup / 30 Hari
-Rp. 60.000 Dana
-Rp. 65.000 Pulsa
-
-4.Permanent Sewa
-Rp. 100.000 Pulsa/Dana
-
 wa.me/${owner[0]}
+
 *❌Bukan Bot!!!*
+
 *Owner ${conn.user.name}*
 `,
   buttonText: 'Harga Sewa Bot',
@@ -36,8 +23,8 @@ wa.me/${owner[0]}
   productListInfo: {
   productSections: [{
   title:'Klik untuk order',
-  products:[{productId:''}]}],
-  headerImage: { productId: '',
+  products:[{productId:'5172911749490534'}]}],
+  headerImage: { productId: '5172911749490534',
   jpegThumbnail: baper },
   businessOwnerJid: `6285785845416@s.whatsapp.net`
   },
