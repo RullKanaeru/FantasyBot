@@ -33,6 +33,5 @@ handler.help = ['asahotak']
 handler.tags = ['game']
 handler.command = /^asahotak/i
 handler.limit = true
-handler.group = true
 
 module.exports = handler
