@@ -25,17 +25,13 @@ let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) =
   let { dl_link, thumb, title, filesize, filesizeF } = yt
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-*❗ Title:* ${title}
+*Now Playing* ${title}
+*Ukuran File:* ${filesizeF}
+*Sumber Video:* ${vid.url}
+*${isLimit ? 'Pakai ': ''}Link:* ${await shortlink(dl_link)}
+*Server y2mate:* ${usedServer}
 
-*📝 Filesize:* ${filesizeF}
-
-*✨Source:* ${vid.url}
-
-*🌙 ${isLimit ? 'Pakai ': ''}Link:* ${await shortlink(dl_link)}
-
-*⭐ Server y2mate:* ${usedServer}
-
-_*Proses, mungkin cuma 1 menit..*_
+_*Loading Proses Audio..*_
 `.trim(), m)
 let _thumb = {}
 try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
